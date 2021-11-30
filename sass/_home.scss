@@ -1,0 +1,13 @@
+.mainHome{
+    height: 107vh;
+    background-color: #ff82a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mainHome--textformat{
+        color:white;
+        font-weight: bold;
+        font-size: x-large;
+        text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    }
+}
