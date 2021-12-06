@@ -146,13 +146,11 @@ body {
   height: 20vh;
   background-color: #635f73;
 }
-.headerArea .logo {
-  padding-left: 100px;
-}
 
 .footer--area {
   height: auto;
   width: auto;
+  color: white;
   background-color: black;
 }
 .footer--area .footer__titulo--propiedades {
@@ -162,17 +160,8 @@ body {
 .footer--area .footer__redes--size {
   font-size: 35px;
 }
-.footer--area .footer__redes--size .footer__redes__item--inst {
-  color: #ff0080;
-}
-.footer--area .footer__redes--size .footer__redes__item--pint {
-  color: #c8232c;
-}
-.footer--area .footer__redes--size .footer__redes__item--fb {
-  color: #3b5998;
-}
-.footer--area .footer__redes--size .footer__redes__item--ws {
-  color: #00bd2d;
+.footer--area .footer__redes--size .color {
+  color: #ff82a1;
 }
 
 /*# sourceMappingURL=estilos.css.map */

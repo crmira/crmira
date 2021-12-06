@@ -34,16 +34,13 @@ body{
 .headerArea{
     height: 20vh;
     background-color: $color7;
-    .logo{
-        padding-left: 100px;
-    }
 } 
 
 //Bloques del footer//
 .footer--area{
     height: auto;
     width: auto;
-    
+    color: white;
     background-color: $color1;
     .footer__titulo--propiedades{
         color: $color0;
@@ -51,17 +48,9 @@ body{
     }
     .footer__redes--size{
         font-size: 35px;
-        .footer__redes__item--inst{
-            color: $instcolor;
-        }
-        .footer__redes__item--pint{
-            color: $pintcolor;
-        }
-        .footer__redes__item--fb{
-            color: $fbcolor;
-        }
-        .footer__redes__item--ws{
-            color: $wscolor;
+        .color{
+            color: #ff82a1;
         }
     }
+    
 }
