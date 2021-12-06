@@ -39,37 +39,11 @@ body{
     }
 } 
 
-//Bloques de la barra de navegación//
-.nav--barradenav{
-    height: 5vh;
-    width: 100%;
-    margin: 0 auto;
-    background-color: $color1;
-    .nav__ul--listado{
-        display: flex;
-        justify-content: right;
-        padding-right: 5%;
-        font-size: 20px;
-        .nav__ul__li--elementos{
-            list-style-type: none;
-            font-weight: 400;
-            padding-right: 5%;
-            display: flex;
-            .nav__ul__li__a--link{
-                text-decoration: none;
-                color: $color2;
-            }
-            .nav__ul__li__a--link:hover{
-                color: $color6;
-                text-decoration: none;
-            }
-        }
-    }
-}
-
 //Bloques del footer//
 .footer--area{
-    height: 20vh;
+    height: auto;
+    width: auto;
+    
     background-color: $color1;
     .footer__titulo--propiedades{
         color: $color0;

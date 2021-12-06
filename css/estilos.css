@@ -70,29 +70,25 @@ i {
   padding-bottom: 5px;
 }
 
-main {
+.mainDescargas {
   background-color: #ffc315;
-}
-main .titulo {
-  font-weight: bold;
-  font-size: 65px;
-  color: black;
-}
-main .contenedorSeccion {
+  height: auto;
   display: flex;
-  padding: 20px 20px 20px 20px;
+  flex-direction: column;
 }
-main .contenedorSeccion .contenedorSeccion__item {
+.mainDescargas .contenedor {
   background-color: #b7d6eb;
-  height: 250px;
   box-shadow: 1px 1px 12px 0pc black;
   margin: 20px 20px 20px 20px;
 }
-main .contenedorSeccion .contenedorSeccion__item .contenedorSeccion__item--img {
-  max-height: 270px;
-  max-width: 100px;
+.mainDescargas .contenedor h3 {
+  font-size: xx-large;
 }
-main .contenedorSeccion .contenedorSeccion__item .contenedorSeccion__item--boton {
+.mainDescargas .contenedor p {
+  font-size: medium;
+  margin: 20px 20px 20px 20px;
+}
+.mainDescargas .contenedor a {
   background-color: #635f73;
   color: white;
   text-decoration: none;
@@ -100,11 +96,11 @@ main .contenedorSeccion .contenedorSeccion__item .contenedorSeccion__item--boton
   text-transform: uppercase;
   font-weight: bold;
 }
-main .contenedorSeccion .contenedorSeccion__item .contenedorSeccion__item--boton:hover {
+.mainDescargas .contenedor a:hover {
   background-color: #ffc315;
   transition: 0.3s ease-in-out;
 }
-main .contenedorSeccion .contenedorSeccion__item:hover {
+.mainDescargas .contenedor:hover {
   transform: scale(1.03);
   transition: 0.3s;
 }
@@ -154,35 +150,9 @@ body {
   padding-left: 100px;
 }
 
-.nav--barradenav {
-  height: 5vh;
-  width: 100%;
-  margin: 0 auto;
-  background-color: black;
-}
-.nav--barradenav .nav__ul--listado {
-  display: flex;
-  justify-content: right;
-  padding-right: 5%;
-  font-size: 20px;
-}
-.nav--barradenav .nav__ul--listado .nav__ul__li--elementos {
-  list-style-type: none;
-  font-weight: 400;
-  padding-right: 5%;
-  display: flex;
-}
-.nav--barradenav .nav__ul--listado .nav__ul__li--elementos .nav__ul__li__a--link {
-  text-decoration: none;
-  color: #aad7d2;
-}
-.nav--barradenav .nav__ul--listado .nav__ul__li--elementos .nav__ul__li__a--link:hover {
-  color: #ffc315;
-  text-decoration: none;
-}
-
 .footer--area {
-  height: 20vh;
+  height: auto;
+  width: auto;
   background-color: black;
 }
 .footer--area .footer__titulo--propiedades {
