@@ -75,20 +75,20 @@
   transition: 0.3s;
 }
 
-.bg-col1 {
-  background: #b7d6eb;
+.color1 {
+  background-color: #b7d6eb;
 }
 
-.bg-col2 {
-  background: #ff82a1;
+.color2 {
+  background-color: #ff82a1;
 }
 
-.bg-col3 {
-  background: #ffc315;
+.color3 {
+  background-color: #ffc315;
 }
 
-.bg-col4 {
-  background: #635f73;
+.color4 {
+  background-color: #aad7d2;
 }
 
 i {
@@ -146,23 +146,51 @@ i {
   transition: 0.3s;
 }
 
+@media (min-width: 768px) {
+  .gridArea {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gridArea .elemento {
+    width: 300px;
+    height: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .gridArea {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .mainContacto {
+  background-color: #ffc315;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .mainContacto .contacto {
-  width: 500px;
+  margin: 0px 20px 20px 20px;
 }
 
 .mainContacto .contenido {
-  width: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,10 +201,11 @@ i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: auto;
 }
 
 .mainContacto .contenido .textos {
-  margin-top: 20px;
+  margin: 20px 20px 20px 20px;
 }
 
 .mainContacto .contenido .textos:hover {
@@ -187,9 +216,66 @@ i {
 }
 
 .mainContacto .contenido .mapa {
-  padding: 20px 20px 20px 20px;
+  margin: 20px 20px 20px 20px;
   width: 300px;
   height: 300px;
+}
+
+@media (min-width: 768px) {
+  .contenido {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenido .textos {
+    margin-top: 20px;
+  }
+  .contenido .textos:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-transition: 0.3s, 0.3s;
+    transition: 0.3s, 0.3s;
+  }
+  .contenido .mapa {
+    margin: 20px 20px 20px 20px;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainContacto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .mainContacto .contacto {
+    width: 500px;
+  }
+  .mainContacto .contenido {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 * {
@@ -206,17 +292,26 @@ body {
 .headerArea {
   height: 20vh;
   background-color: #635f73;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 10px;
+}
+
+.navArea {
+  height: 10vh;
 }
 
 .footer--area {
   height: auto;
   width: auto;
-  color: white;
-  background-color: black;
+  background-color: #ff82a1;
 }
 
 .footer--area .footer__titulo--propiedades {
-  color: white;
   font-style: bold;
 }
 
@@ -225,6 +320,6 @@ body {
 }
 
 .footer--area .footer__redes--size .color {
-  color: #ff82a1;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

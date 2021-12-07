@@ -1,20 +1,23 @@
-//En esta seccion utilizo clases de BOOSTRAP y elementos de BULMA//
+$col1: #b7d6eb;
+$col2: #ff82a1;
+$col3: #ffc315;
+$col4: #aad7d2;
 
-$color-array:(
-    col1: #b7d6eb,
-    col2: #ff82a1,
-    col3: #ffc315,
-    col4: #635f73
-);
-@each $color-name, $color-value in $color-array {
-  .bg-#{$color-name} {
-    background: $color-value;
-  }
+.color1{
+  background-color: $col1;
 }
+.color2{
+  background-color: $col2;
+}
+.color3{
+  background-color: $col3;
+}
+.color4{
+  background-color: $col4;
+}
+
 
 i{
   font-size: 2*25px;
   padding-bottom: 5px;
 }
-
-// Directamente copie le mapa del ejemplo del profesor modificando mis colores y no produce cambios, coloque la class bg-1-2-3-4 tanto al lado del class hero como del class hero-body y no anda, esta compilando bien ya que si llamo individualmente a las clases funcionan sin problemas.//

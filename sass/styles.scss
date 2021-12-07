@@ -34,22 +34,27 @@ body{
 .headerArea{
     height: 20vh;
     background-color: $color7;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
 } 
+
+.navArea{
+    height: 10vh;
+}
 
 //Bloques del footer//
 .footer--area{
     height: auto;
     width: auto;
-    color: white;
-    background-color: $color1;
+    background-color: $color5;
     .footer__titulo--propiedades{
-        color: $color0;
         font-style: bold;
     }
     .footer__redes--size{
         font-size: 35px;
         .color{
-            color: #ff82a1;
+            color: $color0;
         }
     }
     
