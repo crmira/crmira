@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
 .mainHome {
-  height: 107vh;
+  height: 50vh;
   background-color: #ff82a1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,11 +13,36 @@
           justify-content: center;
 }
 
+.mainHome img {
+  width: 300px;
+  height: 170px;
+}
+
 .mainHome .mainHome--textformat {
   color: white;
   font-weight: bold;
-  font-size: x-large;
+  font-size: small;
   text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+@media (min-width: 768px) {
+  .mainHome {
+    height: 85vh;
+  }
+  .mainHome img {
+    width: 700px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainHome {
+    height: 107vh;
+  }
+  .mainHome img {
+    width: 1000px;
+    height: 600px;
+  }
 }
 
 .mainNosotros {
@@ -73,6 +98,15 @@
           transform: scale(1.03);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .mainNosotros__contenedor__elemento, .mainNosotros .mainNosotros__contenedor .mainNosotros__contenedor__elemento--left {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .color1 {

@@ -18,24 +18,28 @@
     <header class="headerArea">
         <img class="logo" src="img/logo.png" alt="logo de empresa">
     </header>
-    <nav class="nav--barradenav">
-        <ul class="nav__ul--listado">
-            <li class="nav__ul__li--elementos">
-                <a class="nav__ul__li__a--link nav__ul__li__a--link:hover" href="index.html">Home</a>
-            </li>
-            <li class="nav__ul__li--elementos">
-                <a class="nav__ul__li__a--link nav__ul__li__a--link:hover" href="pags/nosotros.html">Nosotros</a>
-            </li>
-            <li class="nav__ul__li--elementos">
-                <a class="nav__ul__li__a--link nav__ul__li__a--link:hover" href="pags/promociones.html">Promociones</a>
-            </li>
-            <li class="nav__ul__li--elementos">
-                <a class="nav__ul__li__a--link nav__ul__li__a--link:hover" href="pags/descargas.html">Descargas</a>
-            </li>
-            <li class="nav__ul__li--elementos">
-                <a class="nav__ul__li__a--link nav__ul__li__a--link:hover" href="pags/contacto.html">Contacto</a>
-            </li>
-        </ul>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="pags/nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pags/promociones.html">Promociones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pags/descargas.html">Descargas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pags/contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <main class="mainHome">
@@ -49,7 +53,7 @@
                 </ul>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/cajas.JPG" alt="Box" width="1100" height="700">
+                        <img src="img/cajas.JPG" alt="Box" width="" height="">
                         <div class="carousel-caption mainHome--textformat">
                             <h3>Box</h3>
                             <p>Box explosiva, souvenirs y más!</p>
@@ -90,13 +94,15 @@
     <footer class="footer--area text-center">
         <br>
         <h4 class="footer__titulo--propiedades">Encontranos en nuestras redes sociales:</h4>
-        <div class="footer__redes--size">
-            <a class="footer__redes__item--inst" href="#"><i class="fab fa-instagram"></i></a>
-            <a class="footer__redes__item--pint" href="#"><i class="fab fa-pinterest"></i></i><a>
-                    <a class="footer__redes__item--fb" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="footer__redes__item--ws" href="#"><i class="fab fa-whatsapp"></i></i></a>
+        <div class="footer__redes--size color">
+            <a class="color" href="https://www.instagram.com/enjoy_disenos/"><i class="fab fa-instagram"></i></a>
+            <a class="color" href="https://pin.it/3VkZyaH"><i class="fab fa-pinterest"></i></i><a>
+            <a class="color" href="https://www.facebook.com/Devinilodisenos"><i class="fab fa-facebook-f"></i></a>
+            <a class="color" href="https://wa.me/+5491122724402"><i class="fab fa-whatsapp"></i></i></a>
         </div>
+        <br>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

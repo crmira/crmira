@@ -39,3 +39,8 @@ $color3: #ffc315;
         }
     }
 }
+@media (max-width:768px){
+    .mainNosotros__contenedor__elemento{
+        flex-direction: column;
+    }
+}

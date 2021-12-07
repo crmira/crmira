@@ -1,13 +1,36 @@
 .mainHome{
-    height: 107vh;
+    height: 50vh;
     background-color: #ff82a1;
     display: flex;
     align-items: center;
     justify-content: center;
+    img{
+        width: 300px;
+        height: 170px;
+    }
     .mainHome--textformat{
         color:white;
         font-weight: bold;
-        font-size: x-large;
+        font-size: small;
         text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
     }
 }
+@media (min-width: 768px){
+    .mainHome{
+        height: 85vh;
+        img{
+            width: 700px;
+            height: 450px;
+        }
+    }
+}
+@media (min-width:1024px) {
+    .mainHome{
+        height: 107vh;
+        img{
+            width: 1000px;
+            height: 600px;
+        }
+    }
+}
+
