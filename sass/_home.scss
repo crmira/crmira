@@ -19,17 +19,26 @@
     .mainHome{
         height: 85vh;
         img{
-            width: 700px;
-            height: 450px;
+            width: 600px;
+            height: 350px;
         }
     }
 }
-@media (min-width:1024px) {
+@media (min-width: 1024px){
     .mainHome{
-        height: 107vh;
+        height: 90vh;
         img{
-            width: 1000px;
-            height: 600px;
+            width: 700px;
+            height: 400px;
+        }
+    }
+}
+@media (min-width: 1440px){
+    .mainHome{
+        height: 95vh;
+        img{
+            width: 900px;
+            height: 500px;
         }
     }
 }
